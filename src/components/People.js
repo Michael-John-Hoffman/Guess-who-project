@@ -151,3 +151,4 @@ export default   [
   ]
 
   //make a function that takes a type, then returns a filter based off of that.
+  // check out the for each function

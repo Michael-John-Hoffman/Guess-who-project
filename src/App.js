@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import people from './components/People.js'
 import cover from './photos/cover.jpg'
 import guess from './photos/guess.jpeg'
+
 import './App.css';
 
 class App extends Component {
@@ -11,8 +12,13 @@ class App extends Component {
       people: people,
     }
   }
+  componentWillMount() {
+    this.setState({
+  selectedPerson: this.state.people[Math.floor(Math.random()*this.state.people.length)]
+})
+  }
   render() {
-    let items = this.state.items
+
     return (
       <div className="App">
         <div className="App-header">
@@ -30,6 +36,8 @@ class App extends Component {
           })}
         </div>
         <img src ={guess} height={250} width={250}/>
+        {console.log(this.state.selectedPerson.img)}
+        {this.state.selectedPerson.img}
       </div>
     );
   }
