@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import people from './components/People.js'
 import cover from './photos/cover.jpg'
 import guess from './photos/guess.jpeg'
+import DropdownMenu from './components/DropdownMenu.js';
+import _ from 'lodash';
 
 import './App.css';
 
@@ -10,13 +12,15 @@ class App extends Component {
     super()
     this.state = {
       people: people,
+      attributes: [],
     }
   }
   componentWillMount() {
     this.setState({
   selectedPerson: this.state.people[Math.floor(Math.random()*this.state.people.length)]
-})
-  }
+    })
+}
+ 
   render() {
 
     return (
@@ -28,19 +32,35 @@ class App extends Component {
             <img src ={cover} height={200} width={300}/>
         </div>
         <p className="App-intro">
-          Start guessing features to eliminate people:
+         <DropdownMenu updateSelectAttributes={this.updateSelectAttributes.bind(this)}>
+         </DropdownMenu>
         </p>
-        <div>
-          {this.state.people.map((element, index)=>{
-            return element.img
+        <div className="ListOfPeople">
+          {_.map(_.filter(this.state.people,this.sortAttributes.bind(this)),(element)=>{
+            return <div onClick={() =>this.comparePeople(element.id)}>{element.img} </div>
           })}
         </div>
-        <img src ={guess} height={250} width={250}/>
+        <img src ={guess} height={200} width={200}/>
         {console.log(this.state.selectedPerson.img)}
+      
         {this.state.selectedPerson.img}
       </div>
     );
   }
+  updateSelectAttributes(clickedValue){
+    this.setState({
+      attributes: this.state.attributes.concat(clickedValue),
+    }) 
 }
-
+sortAttributes(person){
+ return _.every(this.state.attributes, attribute=>person[attribute] === this.state.selectedPerson[attribute]  )
+}
+comparePeople(id){
+  if(this.state.selectedPerson.id === id){
+    alert('You got it right!')
+  } else{
+    alert('You got it wrong!')
+  }
+}
+}
 export default App;

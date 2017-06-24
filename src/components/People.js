@@ -8,22 +8,22 @@ import girl4 from "../photos/girl4.jpeg"
 import girl5 from "../photos/girl5.jpeg"
 import girl6 from "../photos/girl6.jpeg"
 import girl7 from "../photos/girl7.jpeg"
-import girl8 from "../photos/girl8.jpeg"
-import guy1 from "../photos/guy1.jpeg"
-import guy2 from "../photos/guy2.jpeg"
-import guy3 from "../photos/guy3.jpeg"
-import guy4 from "../photos/guy4.jpeg"
-import guy5 from "../photos/guy5.jpeg"
-import guy6 from "../photos/guy6.jpeg"
-import guy7 from "../photos/guy7.jpeg"
-import guy8 from "../photos/guy8.jpg"
+  import girl8 from "../photos/girl8.jpeg"
+  import guy1 from "../photos/guy1.jpeg"
+  import guy2 from "../photos/guy2.jpeg"
+  import guy3 from "../photos/guy3.jpeg"
+  import guy4 from "../photos/guy4.jpeg"
+  import guy5 from "../photos/guy5.jpeg"
+  import guy6 from "../photos/guy6.jpeg"
+  import guy7 from "../photos/guy7.jpeg"
+  import guy8 from "../photos/guy8.jpg"
 
 
 export default   [
     {
     id: "1",
     img: <img src ={girl1} height={125} width={125}/>,
-    hair: 'red',
+    blackHair: false,
     glasses: false,
     smile: false,
     hat: false
@@ -31,7 +31,7 @@ export default   [
   {
     id: "2",
     img: <img src ={girl2} height={125} width={125} />,
-    hair: 'blonde',
+    blackHair: false,
     glasses: false,
     smile: true,
     hat: false
@@ -39,7 +39,7 @@ export default   [
   {
     id: "3",
     img: <img src ={girl3} height={125} width={125}/>,
-    hair: 'brown',
+    blackHair: true,
     glasses: false,
     smile: true,
     hat: false
@@ -47,7 +47,7 @@ export default   [
   {
     id: "4",
     img: <img src ={girl4} height={125} width={125}/>,
-    hair: 'blonde',
+    blackHair: false,
     glasses: false,
     smile: false,
     hat: false
@@ -55,7 +55,7 @@ export default   [
   {
     id: "5",
     img: <img src ={girl5} height={125} width={125}/>,
-    hair: 'blonde',
+    blackHair: false,
     glasses: false,
     smile: true,
     hat: true
@@ -63,7 +63,7 @@ export default   [
   {
     id: "6",
     img: <img src ={girl6} height={125} width={125}/>,
-    hair: 'blonde',
+    blackHair: false,
     glasses: false,
     smile: true,
     hat: true
@@ -71,7 +71,7 @@ export default   [
   {
     id: "7",
     img: <img src ={girl7} height={125} width={125}/>,
-    hair: 'blonde',
+    blackHair: false,
     glasses: false,
     smile: true,
     hat: false
@@ -79,7 +79,7 @@ export default   [
   {
     id: "8",
     img: <img src ={girl8} height={125} width={125}/>,
-    hair: 'black',
+    blackHair: true,
     glasses: true,
     smile: false,
     hat: false
@@ -87,7 +87,7 @@ export default   [
   {
     id: "9",
     img: <img src ={guy1} height={125} width={125}/>,
-    hair: 'black',
+    blackHair: true,
     glasses: false,
     smile: false,
     hat: false
@@ -95,7 +95,7 @@ export default   [
   {
     id: "10",
     img: <img src ={guy2} height={125} width={125}/>,
-    hair: 'brown',
+    blackHair: false,
     glasses: false,
     smile: true,
     hat: false
@@ -103,7 +103,7 @@ export default   [
   {
     id: "11",
     img: <img src ={guy3} height={125} width={125}/>,
-    hair: 'black',
+    blackHair: true,
     glasses: true,
     smile: false,
     hat: true
@@ -111,7 +111,7 @@ export default   [
   {
     id: "12",
     img: <img src ={guy4} height={125} width={125}/>,
-    hair: 'black',
+    blackHair: true,
     glasses: false,
     smile: false,
     hat: false
@@ -119,7 +119,7 @@ export default   [
   {
     id: "13",
     img: <img src ={guy5} height={125} width={125}/>,
-    hair: 'black',
+    blackHair: true,
     glasses: false,
     smile: false,
     hat: true
@@ -127,7 +127,7 @@ export default   [
   {
     id: "14",
     img: <img src ={guy6} height={125} width={125}/>,
-    hair: 'black',
+    blackHair: true,
     glasses: false,
     smile: true,
     hat: false
@@ -135,7 +135,7 @@ export default   [
   {
     id: "15",
     img: <img src ={guy7} height={125} width={125}/>,
-    hair: 'black',
+    blackHair: true,
     glasses: true,
     smile: true,
     hat: true
@@ -143,7 +143,7 @@ export default   [
   {
     id: "16",
     img: <img src ={guy8} height={125} width={125}/>,
-    hair: 'bald',
+    blackHair: false,
     glasses: false,
     smile: true,
     hat: false

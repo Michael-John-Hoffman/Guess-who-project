@@ -3,11 +3,7 @@ $color: red;
 
 .App {
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+   justify-content: center;
 }
 
 .App-header {
@@ -25,4 +21,34 @@ $color: red;
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+.Dropdown {
+  position: relative;
+  top: 20px;
+  width: 30px;
+  height: 21px;
+  background-color: teal;  
+  }
 
+.DropdownContainer{
+  display: flex;
+}
+
+.attributeContainer{
+  display: flex;
+  position: relative;
+  padding-left: 8px;  
+  div{
+    padding-right: 5px;
+    background: teal;
+    &:hover{
+      box-shadow: 2px 2px 2px 1px black;
+      outline: blue;
+    }
+  }
+}
+
+.ListOfPeople{
+  width: 1000px;
+  display: flex;
+  flex-wrap: wrap;
+}
