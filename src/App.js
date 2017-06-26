@@ -37,13 +37,10 @@ class App extends Component {
         </p>
         <div className="ListOfPeople">
           {_.map(_.filter(this.state.people,this.sortAttributes.bind(this)),(element)=>{
-            return <div onClick={() =>this.comparePeople(element.id)}>{element.img} </div>
+            return <div className ="Portrait" onClick={() =>this.comparePeople(element.id)}>{element.img} </div>
           })}
         </div>
         <img src ={guess} height={200} width={200}/>
-        {console.log(this.state.selectedPerson.img)}
-      
-        {this.state.selectedPerson.img}
       </div>
     );
   }

@@ -6,16 +6,11 @@
   background-color: #222;
   height: 300px;
   padding: 20px;
-  color: red; }
+  color: red;
+  width: 990px; }
 
 .App-intro {
   font-size: large; }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg); }
-  to {
-    transform: rotate(360deg); } }
 
 .Dropdown {
   position: relative;
@@ -39,6 +34,11 @@
       outline: blue; }
 
 .ListOfPeople {
-  width: 1000px;
+  width: 1050px;
   display: flex;
   flex-wrap: wrap; }
+
+.Portrait {
+  outline: 4px solid gray;
+  outline-offset: -6px;
+  padding: 2px; }

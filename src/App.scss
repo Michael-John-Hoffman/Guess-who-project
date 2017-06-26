@@ -3,7 +3,7 @@ $color: red;
 
 .App {
   text-align: center;
-   justify-content: center;
+  justify-content: center;
 }
 
 .App-header {
@@ -11,16 +11,14 @@ $color: red;
   height: 300px;
   padding: 20px;
   color: $color;
+  width: 990px;
 }
 
 .App-intro {
   font-size: large;
+  
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
 .Dropdown {
   position: relative;
   top: 20px;
@@ -48,7 +46,14 @@ $color: red;
 }
 
 .ListOfPeople{
-  width: 1000px;
+  width: 1050px;
   display: flex;
   flex-wrap: wrap;
+}
+
+.Portrait{
+  outline: 4px solid gray;
+  outline-offset: -6px;
+  padding: 2px;
+
 }
