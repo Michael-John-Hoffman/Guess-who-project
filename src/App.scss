@@ -1,5 +1,5 @@
 $color: red;
-
+$break-small: 400px;
 
 .App {
   text-align: center;
@@ -9,9 +9,8 @@ $color: red;
 .App-header {
   background-color: #222;
   height: 300px;
-  padding: 20px;
   color: $color;
-  width: 990px;
+  
 }
 
 .App-intro {
@@ -25,10 +24,22 @@ $color: red;
   width: 30px;
   height: 21px;
   background-color: teal;  
+  @media screen and (max-width: $break-small) {
+  position: absolute;
+  top: 380px;
+  left: 42px;
+  }
   }
 
 .DropdownContainer{
   display: flex;
+  text-align: center;
+  justify-content: center;
+  @media screen and (max-width: $break-small) {
+    justify-content: left;
+    flex: wrap;
+  }
+  
 }
 
 .attributeContainer{
@@ -46,9 +57,12 @@ $color: red;
 }
 
 .ListOfPeople{
-  width: 1050px;
+  max-width: 1050px;
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
+  justify-content: center;
+  margin: auto;
 }
 
 .Portrait{
