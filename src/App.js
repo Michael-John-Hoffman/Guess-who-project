@@ -44,10 +44,10 @@ class App extends Component {
       </div>
     );
   }
-  updateSelectAttributes(clickedValue){
-    this.setState({
-      attributes: this.state.attributes.concat(clickedValue),
-    }) 
+updateSelectAttributes(clickedValue){
+  this.setState({
+    attributes: this.state.attributes.concat(clickedValue),
+  }) 
 }
 sortAttributes(person){
  return _.every(this.state.attributes, attribute=>person[attribute] === this.state.selectedPerson[attribute]  )
